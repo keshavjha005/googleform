@@ -1,0 +1,32 @@
+<div id="generator">
+  <h1>Blurred Background Generator</h1>
+  <div>
+    <div class="colorBoxSurround">
+      <div class="label">Colour 1:</div>
+      <div class="baseColorBox color-box"></div>
+    </div>
+    <div class="colorBoxSurround">
+      <div class="label">Colour 2:</div>
+      <div class="color1Box color-box"></div>
+    </div>
+    <div class="colorBoxSurround">
+      <div class="label">Colour 3:</div>
+      <div class="color2Box color-box"></div>
+    </div>
+    <div class="colorBoxSurround last">
+      <div class="label">Colour 4:</div>
+      <div class="color3Box color-box"></div>
+    </div>
+  </div>
+  <div class="blurrer">
+    <div class="label">Blur Amount:</div>
+    <input type="range" name="points" id="blur_amount" value="50" min="50" max="100">
+  </div>
+
+  <input type="submit" id="refresh" class="button" value="Generate from Selected Colours">
+  <input type="submit" id="randomise" class="button" value="Randomise with new Colours">
+
+  <textarea id="codeOutput"></textarea>
+
+  <input type="submit" id="copy_code" class="button" value="Copy Script to Clipboard">
+</div>
